@@ -1,0 +1,48 @@
+body>section{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+}
+body > section > div {
+    width: 200px;
+    height: 80px;
+    background-color: rebeccapurple;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    right: 150px;
+    cursor: pointer;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+body > section > div:hover {
+    right: 0;
+    transition-duration: 3s;
+    transition-property: right;
+    cursor: pointer;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+section > div > h3 {
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    bottom: 0;
+    margin: auto;
+}
+
+section > div > div {
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 20px;
+
+}

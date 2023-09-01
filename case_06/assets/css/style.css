@@ -1,0 +1,92 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/case_06/assets/img/sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.main > div:first-child {
+    height: 200px;
+    width: 400vw;
+    background-image: url("/case_06/assets/img/road.jpg");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: road_animation 2s linear infinite;
+}
+
+
+@keyframes road_animation {
+
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+.main > div:nth-child(2) {
+    height: 250px;
+    width: 400vw;
+    background-image: url("/case_06/assets/img/city.png");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background-repeat: repeat-x;
+    animation: car_animation 5s linear infinite;
+
+}
+
+@keyframes car_animation {
+
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+.main > div:nth-child(3) {
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+.main > div:nth-child(3) > img {
+    width: 100%;
+
+}
+
+.main > div:nth-child(4){
+    left: 50%;
+    bottom: 184px;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+.main>div:nth-child(4)>img{
+    width: 75px;
+    height: 75px;
+    animation: tire_animation 1s linear infinite;
+
+}
+.main>div:nth-child(4)>img:first-child{
+    left: -167px;
+    position: absolute;
+}.main>div:nth-child(4)>img:nth-child(2){
+     right: -154px;
+     position: absolute;
+ }
+
+@keyframes tire_animation {
+    100%{
+        transform: rotate(360deg);
+       }
+}

@@ -1,0 +1,31 @@
+section{
+    height: 100vh;
+    position: relative;
+}
+section>div{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 4px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: water-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes water-animation {
+    from{
+        width: 20px;
+    }
+    to{
+        width: 200px;
+        opacity: 0;
+    }
+}
